@@ -18,9 +18,11 @@ const TopNav = function()
 //console.log("count",cartItemCount);
     return(
         <div className='header bg-dark'>
-        <div className='topnavrow row'>
+        {/* <div className='topnavrow row'> */}
+        <div className='d-flex justify-content-between'>
           <div className='brand my-1'>
-            <h1> Coforge Rewards Shop </h1>
+            {/* <h1> Coforge Rewards Shop </h1> */}
+            <h1 class='logo'> Coforge Rewards Shop </h1>
           </div>
          {/*
          
@@ -46,7 +48,8 @@ const TopNav = function()
             <ul className="p-0">
  
            
-           <li className="list-icon" > <Link to="/cart"> <FontAwesomeIcon icon="fa fa-shopping-cart" style={{color:"white"}}/>{cartItemCount>0 && <div className='cart-item-count'><p>{cartItemCount}</p></div>}</Link> </li>
+           {/* <li className="list-icon" > <Link to="/cart" > <FontAwesomeIcon icon="fa fa-shopping-cart" style={{color:"white"}}/>{cartItemCount>0 && <div className='cart-item-count'><p>{cartItemCount}</p></div>}</Link> </li> */}
+           <li className="list-icon" > <Link to="/cart" className='d-flex' > <FontAwesomeIcon icon="fa fa-shopping-cart" style={{color:"white"}}/>{cartItemCount>0 && <div className='cart-item-count'><p>{cartItemCount}</p></div>}</Link> </li>
          
             </ul>
 
