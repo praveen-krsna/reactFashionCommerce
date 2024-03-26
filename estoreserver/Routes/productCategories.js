@@ -13,6 +13,12 @@ productCategories.get("/",(req,res)=>{
      res.send(" api server running");
 })
 
+
+productCategories.get("/",(req,res)=>{
+
+
+     res.send(" api server running");
+})
 productCategories.get('/getProducts',(req,res)=>{
 
 
